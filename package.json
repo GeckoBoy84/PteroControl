@@ -1,0 +1,28 @@
+{
+  "name": "PteroControl modified by Lenzh",
+  "version": "v10.1",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "colors": "^1.4.0",
+    "common-tags": "^1.8.2",
+    "discord-api-types": "^0.26.1",
+    "discord-epagination": "^1.4.5",
+    "discord.js": "^13.6.0",
+    "discordjs-button-pagination": "^3.0.1",
+    "dotenv": "^16.0.0",
+    "libsodium": "^0.7.9",
+    "libsodium-wrappers": "^0.7.9",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.0",
+    "nodeactyl": "^3.2.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "nodemon": "^2.0.15"
+  }
+}

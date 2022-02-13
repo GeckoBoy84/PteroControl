@@ -1,0 +1,6 @@
+{
+  "Database": "INSERT_MONGO_HERE",
+  "TOKEN": "INSERT_TOKEN_HERE",
+  "inviteSupport": "https://discord.gg/jU4fQvhDCz",
+  "inviteLink": "https://discord.com/api/oauth2/authorize?client_id=939836646914920488&permissions=8&scope=bot%20applications.commands"
+ }
