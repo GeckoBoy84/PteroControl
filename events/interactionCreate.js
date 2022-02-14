@@ -15,7 +15,7 @@ client.on('interactionCreate', async interaction => {
 
 		const cmd = client.slashCommands.get(interaction.commandName);
 		if (!cmd) {
-			return interaction.followUp({
+			return interaction.reply({
 				content: 'An error has occured ',
 			});
 		}
@@ -23,7 +23,7 @@ client.on('interactionCreate', async interaction => {
 		const args = [];
 
 		for (const option of interaction.options.data) {
-			if (option.type === 'SUB_COMMAND') {
+			if (option.type === '1') {
 				if (option.name) args.push(option.name);
 				option.options?.forEach((x) => {
 					if (x.value) args.push(x.value);
@@ -40,48 +40,49 @@ client.on('interactionCreate', async interaction => {
 				return interaction.reply({
 					embeds: [
 						new MessageEmbed()
-						.setColor(ee.embed_color)
+						.setColor("BLUE")
 						.setDescription(`You don't Have ${cmd.permissions} To Run Command..`),
 					],
 					ephemeral: true,
 				});
 			}
 			cmd.run(client, interaction, args);
-					const messageChannel = client.channels.cache.get('941049199846379561');
+			const messageChannel = client.channels.cache.get('941049199846379561');
 
-					const embedLog = new MessageEmbed()
-						.setColor('AQUA')
-						.setAuthor({
-							name: `${interaction.user.tag} used slashcommand`,
-							iconURL: interaction.user.avatarURL({
-								dynamic: true,
-								size: 512,
-							}),
-						})
+			const embedLog = new MessageEmbed()
+				.setColor('AQUA')
+				.setAuthor({
+					name: `${interaction.user.tag} used slashcommand`,
+					iconURL: interaction.user.avatarURL({
+						dynamic: true,
+						size: 512,
+					}),
+				})
 
-						.setDescription(`${interaction.user}`)
-						.setThumbnail(interaction.user.avatarURL({
-							dynamic: true,
-							size: 512,
-						}))
-						// .setTimestamp(moment().format('ddd DD-MM-YYYY HH:mm:ss'))
-						.setFooter({
-							text: moment().format('ddd DD-MM-YYYY HH:mm:ss'),
-						})
-						.addField('**Command**', `${cmd.name}: ` + `${args}`)
-						.addField('**Can run:**', `${interaction.member.permissions.has(cmd.permissions || [])}`, true)
-						.addField('**Channel**:', `${interaction.channel}`, true);
+				.setDescription(`${interaction.user}`)
+				.setThumbnail(interaction.user.avatarURL({
+					dynamic: true,
+					size: 512,
+				}))
+				// .setTimestamp(moment().format('ddd DD-MM-YYYY HH:mm:ss'))
+				.setFooter({
+					text: moment().format('ddd DD-MM-YYYY HH:mm:ss'),
+				})
+				.addField('**Command**', `${cmd.name}: ` + `${args}`)
+				.addField('**Can run:**', `${interaction.member.permissions.has(cmd.permissions || [])}`, true)
+				.addField('**Channel**:', `${interaction.channel}`, true)
+				.addField('**Guild ID**:', `${interaction.guild.id}`, true);
 
-					if (cmd.permissions == ' ') {
-						embedLog.addField('**Permissions**:', 'None', true);
-					} else {
-						embedLog.addField('**Permissions**:', `${cmd.permissions}`, true);
-					}
+			if (cmd.permissions == ' ') {
+				embedLog.addField('**Permissions**:', 'None', true);
+			} else {
+				embedLog.addField('**Permissions**:', `${cmd.permissions}`, true);
+			}
 
-					messageChannel.send({
-						embeds: [embedLog],
-					});
-            		}
+			messageChannel.send({
+				embeds: [embedLog],
+			});
+		}
 	}
 	// Context Menu Handling
 	if (interaction.isContextMenu()) {

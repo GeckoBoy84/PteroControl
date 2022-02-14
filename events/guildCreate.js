@@ -35,7 +35,7 @@ client.on('guildCreate', async (guild) => {
 			name: 'PteroControl | Information',
 			iconURL: client.user.avatarURL(),
 		})
-		.setColor('RANDOM')
+		.setColor('GREEN')
 		.setThumbnail(guild.iconURL())
 		.setDescription(
 
@@ -57,14 +57,10 @@ client.on('guildCreate', async (guild) => {
 			},
 
 			{
-				name: 'Owner Name',
-				value: `${owner.name}`,
+				name: 'Owner Info',
+				value: `<@${owner.id}> (${owner.id})`,
 			},
-            			{
-				name: 'Owner ID',
-				value: `${owner.id}`,
-			},
-            			{
+            {
 				name: 'Total Member Count',
 				value: `${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)}`,
 			},

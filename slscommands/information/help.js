@@ -22,7 +22,7 @@ module.exports = {
 		name: 'command',
 		description: 'Enter the command or category that you want to get help with.',
 		required: false,
-		type: 'STRING',
+		type: '3',
 	}],
 
 	run: async (client, interaction) => {

@@ -42,7 +42,7 @@ module.exports = {
 				.setColor("E5BE11")
 				.setDescription("Go to your Hosting Panel and copy the Panel URL/LINK")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870935938413494302/Screenshot_2021-07-31-14-14-00-45.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941497941749821461/unknown.png"
 				);
 
 			let embed1 = new MessageEmbed()
@@ -50,7 +50,7 @@ module.exports = {
 				.setColor("E5BE11")
 				.setDescription("Go to Profile button on the top right")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870929432846671932/20210731_142210.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941498180628004864/unknown.png"
 				);
 
 			let embed2 = new MessageEmbed()
@@ -58,7 +58,7 @@ module.exports = {
 				.setColor("E5BE11")
 				.setDescription("Go to API Credentials button on the top left")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870929432595009576/20210731_142103.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941498327873224764/unknown.png"
 				);
 
 			let embed3 = new MessageEmbed()
@@ -68,7 +68,7 @@ module.exports = {
 					"Fill the description anything you want and press create, you don't need to fill Allowed Ips"
 				)
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870929432095911946/20210731_142012.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941498451450011668/unknown.png"
 				);
 
 			let embed4 = new MessageEmbed()
@@ -76,7 +76,7 @@ module.exports = {
 				.setColor("E5BE11")
 				.setDescription("Copy the Panel ApiKey that just appear on your screen")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870929431848435762/20210731_141910.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941498613933174824/unknown.png"
 				);
 
 			let embed5 = new MessageEmbed()
@@ -88,15 +88,15 @@ module.exports = {
 					"control`, select register button or register new panel menu, and check your dms"
 				)
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870929906182258728/20210731_142350.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941499045480898590/unknown.png"
 				);
 
 			let embed6 = new MessageEmbed()
 				.setTitle("PteroControl | Tutorial Step 7")
 				.setColor("E5BE11")
-				.setDescription("Type your Panel URL/LINK")
+				.setDescription("Type your Panel information")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870931067849302066/IMG_20210731_142808.jpg"
+					"https://cdn.discordapp.com/attachments/941497404136517672/941499825524981770/unknown.png"
 				);
 
 			let embed7 = new MessageEmbed()
@@ -132,7 +132,7 @@ module.exports = {
 				.setColor("E5BE11")
 				.setDescription("Thank you for using PteroControl, have fun!")
 				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870932824046338089/20210731_143542.jpg"
+					"https://cdn.glitch.com/b0cc99ff-cc1d-46a0-8146-a13e39873cd9%2F20210625_111805.jpg?v=1624612831266"
 				);
 			pages = [
 				embed0,
@@ -142,9 +142,9 @@ module.exports = {
 				embed4,
 				embed5,
 				embed6,
-				embed7,
-				embed8,
-				embed9,
+				// embed7,
+				// embed8,
+				// embed9,
 				embed10,
 			];
 

@@ -14,11 +14,11 @@ module.exports = async (client) => {
 		console.log(code);
 		console.log('=== [antiCrash] :: [beforeExit] :: [end] ==='.yellow.dim);
 	});
-	process.on('exit', (error) => { // If You Want You Can Use
-		console.log('=== [antiCrash] :: [exit] :: [start] ==='.yellow.dim);
-		console.log(error);
-		console.log('=== [antiCrash] :: [exit] :: [end] ==='.yellow.dim);
-	});
+	// process.on('exit', (error) => { // If You Want You Can Use
+	// 	console.log('=== [antiCrash] :: [exit] :: [start] ==='.yellow.dim);
+	// 	console.log(error);
+	// 	console.log('=== [antiCrash] :: [exit] :: [end] ==='.yellow.dim);
+	// });
 	process.on('multipleResolves', (type, promise, reason) => { // Needed
 		console.log('=== [antiCrash] :: [multipleResolves] :: [start] ==='.yellow.dim);
 		console.log(type, promise, reason);

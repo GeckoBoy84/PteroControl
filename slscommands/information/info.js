@@ -48,7 +48,7 @@ module.exports = {
 				`**Ping** : ${client.ws.ping}ms\n**Uptime** : ${uptime}\n\nSponsored By:\n\[ScarceHost.uk](https://ScarceHost.uk)\``
 			)
 			.setFooter({
-				text: `(C) 2022 PteroControl Client | For Pterodactyl V1.x | Sponsored By ScarceHost.uk`
+				text: `(C) 2022 PteroControl | For Pterodactyl V1.x | Sponsored By ScarceHost.uk`
 			});
 		interaction.reply({
 			embeds: [helpEmbed],
