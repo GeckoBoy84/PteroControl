@@ -16,7 +16,8 @@ module.exports = {
 	 * @param {String[]} args
 	 */
 	run: async (client, message, args) => {
-		const ownerIDs = ['INSERT_OWNER_ID_HERE'];
+		const config = require('../../settings/config.json');
+		const ownerIDs = config.OwnerIds;
 		const shutdownembed = new MessageEmbed()
 			.setTitle("Shutting down")
 			.setDescription("Bye bye");

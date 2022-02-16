@@ -52,7 +52,7 @@ client.categories = fs.readdirSync(path.resolve(__dirname, 'commands'));
 });
 
 client.on('ready', async () => {
-	const messageChannel = await client.channels.cache.get('939844393425317952');
+	const messageChannel = await client.channels.cache.get('config.logChannel');
 	process.on('beforeExit', async (code) => { // If You Want You Can Use
 
 		if (typeof code !== 'string') {

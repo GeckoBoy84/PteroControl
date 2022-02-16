@@ -1,10 +1,12 @@
 {
-  "Database": "INSERT_MONGO_URL_HERE",
-  "TOKEN": "INSERT_TOKEN_HERE",
+  "Database": "",
+  "TOKEN": "",
   "inviteSupport": "https://discord.gg/jU4fQvhDCz",
   "inviteLink": "https://discord.com/api/oauth2/authorize?client_id=939836646914920488&permissions=8&scope=bot%20applications.commands",
   "UseGlobal": "false",
-  "clientId": "INSERT_YOUR_BOT_ID_HERE",
-  "guildId": "INSERT_GUILD_ID_HERE"
-
+  "clientId": "",
+  "guildId": "",
+  "logChannel": "",
+  "commandLogs": "",
+  "OwnerIds": [""]
  }

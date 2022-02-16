@@ -47,7 +47,7 @@ client.on('interactionCreate', async interaction => {
 				});
 			}
 			cmd.run(client, interaction, args);
-			const messageChannel = client.channels.cache.get('941049199846379561');
+			const messageChannel = client.channels.cache.get(config.commandLogs);
 
 			const embedLog = new MessageEmbed()
 				.setColor('AQUA')
