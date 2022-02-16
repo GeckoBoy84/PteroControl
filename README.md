@@ -1,4 +1,6 @@
-# PteroControl
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b4b5049124df4df691600ec234117dd0)](https://www.codacy.com/gh/GeckoBoy84/PteroControl/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GeckoBoy84/PteroControl&amp;utm_campaign=Badge_Grade)
+
+# PteroControl 
 
 To setup the bot, insert all values into the `config.json` file located in `/settings`
 
