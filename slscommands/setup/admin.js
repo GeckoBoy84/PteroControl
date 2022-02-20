@@ -32,7 +32,7 @@ module.exports = {
 		let panelNAME;
 
 		let panelTitle = "PteroControl | Panel Management";
-		let footer = "PteroControl For Pterodactyl 1.x | Sponsored By [ScarceHost.uk]";
+		let footer = "PteroControl For Pterodactyl 1.x | Sponsored By ScarceHost.uk";
 		let color = "E5BE11";
 		let thumbnail = interaction.user.avatarURL();
 		const id = interaction.user.id;
