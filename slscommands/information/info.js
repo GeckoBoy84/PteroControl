@@ -45,7 +45,7 @@ module.exports = {
 			.setTitle("PteroControl | Information")
 			.setThumbnail(client.user.avatarURL())
 			.setDescription(
-				`**Ping** : ${client.ws.ping}ms\n**Uptime** : ${uptime}\n\nSponsored By:\n\[ScarceHost.uk](https://ScarceHost.uk)\``
+				`**Ping** : ${client.ws.ping}ms\n**Uptime** : ${uptime}\n\nSponsored By:\n\[ScarceHost.uk](https://ScarceHost.uk)`
 			)
 			.setFooter({
 				text: `(C) 2022 PteroControl | For Pterodactyl V1.x | Sponsored By ScarceHost.uk`
