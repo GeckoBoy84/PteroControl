@@ -18,22 +18,18 @@ client.on('guildDelete', async (guild) => {
 
 			`GUILD REMOVED`,)
 		.addFields(
-
 			{
 				name: 'Guild Name',
 				value: `${guild.name}`,
 			},
-			
 			{
 				name: 'Guild ID',
 				value: `${guild.id}`,
 			},
-
 			{
 				name: 'Guild Member Count',
 				value: `${guild.memberCount}`,
 			},
-
 			{
 				name: 'Owner Info',
 				value: `<@${owner.id}> (${owner.id})`,
