@@ -62,8 +62,8 @@ module.exports = {
 			});
 
 			const description = stripIndent `
-            Use The Drop Down Menu Or Follow Given Commands Bellow
-            You Can Also Type /help [command]
+            Use the drop down menu or follow given commands below
+            You can also type /help [command]
             `;
 			const embed = new MessageEmbed()
 				.setTitle('Bot Commands')
@@ -153,7 +153,7 @@ module.exports = {
 								} Commands__`,
 							)
 							.setDescription(
-								'Use `/help` followed by a command name to get more information on a command.\nFor example: `/help botinfo`.\n\n',
+								'Use `/help` followed by a command name to get more information on a command.\nFor example: `/help control`.\n\n',
 							)
 							.addFields(catts)
 							.setColor(color);
