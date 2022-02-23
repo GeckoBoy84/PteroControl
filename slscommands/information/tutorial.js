@@ -48,7 +48,7 @@ module.exports = {
 			let embed1 = new MessageEmbed()
 				.setTitle("PteroControl | Tutorial Step 2")
 				.setColor("E5BE11")
-				.setDescription("Go to Profile button on the top right")
+				.setDescription("Click the Profile button on the top right")
 				.setImage(
 					"https://cdn.discordapp.com/attachments/941497404136517672/941498180628004864/unknown.png"
 				);
@@ -56,7 +56,7 @@ module.exports = {
 			let embed2 = new MessageEmbed()
 				.setTitle("PteroControl | Tutorial Step 3")
 				.setColor("E5BE11")
-				.setDescription("Go to API Credentials button on the top left")
+				.setDescription("Click the API Credentials button on the top left")
 				.setImage(
 					"https://cdn.discordapp.com/attachments/941497404136517672/941498327873224764/unknown.png"
 				);
@@ -65,7 +65,7 @@ module.exports = {
 				.setTitle("PteroControl | Tutorial Step 4")
 				.setColor("E5BE11")
 				.setDescription(
-					"Fill the description anything you want and press create, you don't need to fill Allowed Ips"
+					"Fill the description with anything you want and press create, don't type in Allowed Ips"
 				)
 				.setImage(
 					"https://cdn.discordapp.com/attachments/941497404136517672/941498451450011668/unknown.png"
@@ -74,7 +74,7 @@ module.exports = {
 			let embed4 = new MessageEmbed()
 				.setTitle("PteroControl | Tutorial Step 5")
 				.setColor("E5BE11")
-				.setDescription("Copy the Panel ApiKey that just appear on your screen")
+				.setDescription("Copy the Panel ApiKey that appears on your screen")
 				.setImage(
 					"https://cdn.discordapp.com/attachments/941497404136517672/941498613933174824/unknown.png"
 				);
@@ -100,34 +100,6 @@ module.exports = {
 				);
 
 			let embed7 = new MessageEmbed()
-				.setTitle("PteroControl | Tutorial Step 8")
-				.setColor("E5BE11")
-				.setDescription("Paste your Panel ApiKey")
-				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870931068084191272/IMG_20210731_142820.jpg"
-				);
-
-			let embed8 = new MessageEmbed()
-				.setTitle("PteroControl | Tutorial Step 9")
-				.setColor("E5BE11")
-				.setDescription("Type the Panel name")
-				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870931068407136296/IMG_20210731_142835.jpg"
-				);
-
-			let embed9 = new MessageEmbed()
-				.setTitle("PteroControl | Tutorial Step 10")
-				.setColor("E5BE11")
-				.setDescription(
-					"Type `" +
-					gprefix +
-					"control` again and select your server the the button name"
-				)
-				.setImage(
-					"https://media.discordapp.net/attachments/796243715014131714/870931249169055795/Screenshot_2021-07-31-14-29-47-46_572064f74bd5f9fa804b05334aa4f912.jpg"
-				);
-
-			let embed10 = new MessageEmbed()
 				.setTitle("PteroControl | Tutorial End")
 				.setColor("E5BE11")
 				.setDescription("Thank you for using PteroControl, have fun!")
@@ -142,10 +114,7 @@ module.exports = {
 				embed4,
 				embed5,
 				embed6,
-				// embed7,
-				// embed8,
-				// embed9,
-				embed10,
+				embed7,
 			];
 
 			buttonList = [
