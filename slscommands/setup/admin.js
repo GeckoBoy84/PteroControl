@@ -39,7 +39,7 @@ module.exports = {
 
 		if (id !== "139466122171908096")
 			return interaction.channel.send(
-				"This command are on **Working In Progress** only bot owner can access it for now!"
+				"This command are a **Work In Progress** only bot owner can access it for now!"
 			);
 
 		const Support = new MessageButton()
