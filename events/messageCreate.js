@@ -75,7 +75,7 @@ client.on('messageCreate', async message => {
 				embeds: [
 					new MessageEmbed()
 					.setColor("BLUE")
-					.setDescription(`** ❌ You don't Have ${command.permissions} To Run Command.. **`),
+					.setDescription(`** ❌ You don't have ${command.permissions} to run that command. **`),
 				],
 			});
 		}
