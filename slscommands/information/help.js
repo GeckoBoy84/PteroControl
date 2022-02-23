@@ -35,7 +35,8 @@ module.exports = {
 		if (!helpcmd) {
 			const ignored = ['the ingored commands'];
 			const emo = {
-				information: '❔',
+				information: ':grey_question:',
+				setup: `:tools:`,
 			};
 
 			const ccate = [];
