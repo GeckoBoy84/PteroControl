@@ -16,7 +16,7 @@ const config = require('../../settings/config.json')
 
 module.exports = {
 	name: "admin",
-	description: "description",
+	description: "work in progress",
 	usage: 'admin',
 	permissions: ["MANAGE_MESSAGES"],
 
