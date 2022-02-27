@@ -42,20 +42,18 @@ client.on('guildCreate', async (guild) => {
 			'GUILD ADDED',
 		)
 		.addFields(
-
 			{
 				name: 'Guild Name',
 				value: `${guild.name}`,
-			}, {
+			},
+			{
 				name: 'Guild ID',
 				value: `${guild.id}`,
 			},
-
 			{
 				name: 'Guild Member Count',
 				value: `${guild.memberCount}`,
 			},
-
 			{
 				name: 'Owner Info',
 				value: `<@${owner.id}> (${owner.id})`,
@@ -67,8 +65,7 @@ client.on('guildCreate', async (guild) => {
             {
 				name: 'Total Guilds',
 				value: `${client.guilds.cache.size}`,
-			},
-            
+			}, 
 		);
 	const loggingchannel = client.channels.cache.get('939844393425317951');
 	loggingchannel.send({

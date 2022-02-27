@@ -41,7 +41,7 @@ client.on('interactionCreate', async interaction => {
 					embeds: [
 						new MessageEmbed()
 						.setColor("BLUE")
-						.setDescription(`You don't Have ${cmd.permissions} To Run Command..`),
+						.setDescription(`You don't have ${cmd.permissions} to run that command.`),
 					],
 					ephemeral: true,
 				});
