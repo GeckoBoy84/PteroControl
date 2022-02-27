@@ -32,7 +32,7 @@ module.exports = {
 		const serverTitle = 'PteroControl | Server Management';
 		const accountTitle = 'PteroControl | Account Management';
 		const footer = 'PteroControl For Pterodactyl 1.x | Sponsored By ScarceHost.uk';
-		const color = 'E5BE11';
+		const color = '0000FF';
 		const thumbnail = client.user.avatarURL();
 		const id = interaction.user.id;
 
@@ -171,13 +171,13 @@ module.exports = {
 					);
 
 				const timesUp = new MessageEmbed()
-					.setColor(color)
+					.setColor("RED")
 					.setTitle(panelTitle)
 					.setThumbnail(thumbnail)
 					.setFooter({
 						text: footer,
 					})
-					.setDescription('I havent recieved a input from you');
+					.setDescription('I havent recieved a reply from you');
 
 				if (panels.length < 1) {
 					interaction.channel
@@ -837,7 +837,7 @@ module.exports = {
 													.setFooter({
 														text: footer,
 													})
-													.setColor(color)
+													.setColor(`00ff00`)
 													.setThumbnail(thumbnail)
 													.setDescription(fpanel[0].NAME + ' updated!');
 
@@ -945,7 +945,7 @@ module.exports = {
 																	});
 															})
 															.catch((error) => {
-																interaction.channel.send('Sorry I didn\'t recieved a reply');
+																interaction.channel.send({embeds: [timesUp]});
 															});
 													}
 													if (ep.customId === 'eurl') {
@@ -998,7 +998,7 @@ module.exports = {
 																	});
 															})
 															.catch((error) => {
-																interaction.channel.send('Sorry I didn\'t recieved a reply');
+																interaction.channel.send({embeds: [timesUp]});
 															});
 													}
 													if (ep.customId === 'eapi') {
@@ -1051,7 +1051,7 @@ module.exports = {
 																	});
 															})
 															.catch((error) => {
-																interaction.channel.send('Sorry I didn\'t recieved a reply');
+																interaction.channel.send({embeds: [timesUp]});
 															});
 													}
 												});
@@ -1646,7 +1646,7 @@ module.exports = {
 																								collected.first().delete();
 																							})
 																							.catch((error) => {
-																								interaction.channel.send('Sorry I didn\'t recieved a reply');
+																								interaction.channel.send({embeds: [timesUp]});
 																							});
 																					}
 																					if (control.customId === 'install') {
@@ -1818,7 +1818,7 @@ module.exports = {
 																												.catch((error) => {
 																													console.log(error);
 
-																													interaction.channel.send('Sorry I didn\'t recieved a reply');
+																													interaction.channel.send({embeds: [timesUp]});
 
 																												});
 																										}
@@ -1998,7 +1998,7 @@ module.exports = {
 																							})
 																							.catch((error) => {
 																								console.log(error);
-																								interaction.channel.send('Sorry I didn\'t recieved a reply');
+																								interaction.channel.send({embeds: [timesUp]});
 																							});
 																					}
 																					if (control.customId === 'close') {
@@ -2129,7 +2129,7 @@ module.exports = {
 																								collected.first().delete();
 																							})
 																							.catch((error) => {
-																								interaction.channel.send('Sorry I didn\'t recieved a reply');
+																								interaction.channel.send({embeds: [timesUp]});
 																							});
 																					}
 																					if (control.customId === 'install') {
@@ -2300,7 +2300,7 @@ module.exports = {
 																												)
 																												.catch((error) => {
 																													console.log(error);
-																													interaction.channel.send('Sorry I didn\'t recieved a reply');
+																													interaction.channel.send({embeds: [timesUp]});
 																												});
 																										}
 																									},
@@ -2479,7 +2479,7 @@ module.exports = {
 																							})
 																							.catch((error) => {
 																								console.log(error);
-																								interaction.channel.send('Sorry I didn\'t recieved a reply');
+																								interaction.channel.send({embeds: [timesUp]});
 																							});
 																					}
 																					if (control.customId === 'close') {
